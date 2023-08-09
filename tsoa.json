@@ -1,0 +1,22 @@
+{
+  "entryFile": "server.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["src/controllers/*.controller.ts"],
+  "spec": {
+    "outputDirectory": "src",
+    "specVersion": 3,
+    "securityDefinitions": {
+      "jwt": {
+        "type": "http",
+        "name": "authorization",
+        "in": "header",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "routes": {
+    "routesDir": "src",
+    "authenticationModule": "src/middlewares/auth.middleware.ts"
+  },
+  "ignore": ["**/node_modules/**"]
+}

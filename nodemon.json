@@ -1,0 +1,5 @@
+{
+  "exec": "npm run routes",
+  "watch": ["src/controllers"],
+  "ext": "ts"
+}
